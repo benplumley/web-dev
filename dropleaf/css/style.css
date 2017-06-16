@@ -1,0 +1,26 @@
+.menubar {
+	text-align: right;
+	position: relative;
+}
+
+.slogan {
+	background-color: #9E8754;
+}
+
+.slogan h1 {
+	color: white;
+	text-align: center;
+}
+
+.slogan p {
+	text-align: center;
+}
+
+.bush {
+	background-color: #90C442;
+}
+
+.join {
+	display: block;
+	margin: 0 auto;
+}
