@@ -1,6 +1,49 @@
+@font-face {
+    font-family: century-gothic;
+    src: url(GOTHIC.TTF);
+}
+
+* {
+	text-align: center;
+	font-family: century-gothic;
+	overflow-x: hidden;
+}
+
+p, h1, h2 {
+	padding: 10px;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	-webkit-columns: 0px 2; /* Chrome, Safari, Opera */
+    -moz-columns: 0px 2; /* Firefox */
+    columns: 0px 2;
+}
+
+.logo {
+	padding: 10px;
+}
+
+.header>.logo {
+	text-align: left;
+}
+
 .menubar {
+	width: 100%;
 	text-align: right;
-	position: relative;
+	vertical-align: middle;
+	line-height: 57px;
+	padding: 10px;
+	padding-right: 20px;
+}
+
+.menubar>a {
+	color: black;
+	padding: 10px;
 }
 
 .slogan {
@@ -9,11 +52,12 @@
 
 .slogan h1 {
 	color: white;
-	text-align: center;
+	padding: 30px;
+	line-height: 120%;
 }
 
 .slogan p {
-	text-align: center;
+	padding-bottom: 30px;
 }
 
 .bush {
@@ -21,6 +65,80 @@
 }
 
 .join {
-	display: block;
-	margin: 0 auto;
+	font-size: 20pt;
+	line-height: 80px;
+	color: white;
+	background-color: #224401;
+	border: 10px solid #224401;
+	border-radius: 5px;
+}
+
+#sign-up {
+	padding: 0px;
+	color: #2A2831;
+	background-color: #99CC55;
+	border: 10px solid #99CC55;
+	border-radius: 5px;
+}
+
+.how-it-works {
+	background-color: #9E8754;
+	color: white;
+}
+
+.three-columns {
+	-webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 3;
+}
+
+.four-columns {
+	-webkit-columns: 30px 4; /* Chrome, Safari, Opera */
+    -moz-columns: 30px 4; /* Firefox */
+    columns: 30px 4;
+}
+
+.column, .column>h2 {
+	/*overflow-y: hidden;*/
+	padding: 10px;
+}
+
+.community {
+	background-color: #BCDA8E;
+}
+
+.community>h1 {
+	padding-top: 40px;
+}
+
+.community>div {
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.community>div>p {
+  text-align: left;
+}
+
+.welcome-home>h1 {
+	font-size: 40pt;
+	padding: 40px;
+	padding-bottom: 20px;
+}
+
+.footer {
+	background-color: #9E8754;
+}
+
+.footer>a {
+	font-size: 10pt;
+	color: white;
+	margin: 20px;
+	line-height: 40px;
+}
+
+.left-align>p {
+	text-align: left;
+	padding-top: 40px;
 }
