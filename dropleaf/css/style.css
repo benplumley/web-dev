@@ -25,7 +25,8 @@ a {
 }
 
 .logo {
-	padding: 10px;
+	padding-top: 13px;
+	padding-left: 13px;
 }
 
 .header>.logo {
@@ -38,7 +39,7 @@ a {
 	vertical-align: middle;
 	line-height: 57px;
 	padding: 10px;
-	padding-right: 20px;
+	padding-right: 29px;
 }
 
 .menubar>a {
@@ -48,20 +49,42 @@ a {
 
 .slogan {
 	background-color: #9E8754;
+    background: url("../img/hero1.jpg");
+    background-size: cover;
+    color: white;
+    height: calc(100vh - 180px);
+    display: table;
+    width:100%;
+    /*line-height: 800px;*/
 }
 
 .slogan h1 {
-	color: white;
 	padding: 30px;
-	line-height: 120%;
 }
 
 .slogan p {
 	padding-bottom: 30px;
 }
 
+.slogan-text>* {
+    line-height: 120%;
+}
+
+.slogan-text {
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.highlight {
+    background-color: rgba(144, 196, 66, 0.5);
+}
+
 .bush {
-	background-color: #90C442;
+    background-color: #90C442; /*fallback for ancient browsers*/
+    background: url("../img/tree3_tile.png"), linear-gradient(rgba(0,0,0,0), white);
+    background-size: auto 100%;
+    position: relative;
+    top: -8px;
 }
 
 .join {
@@ -144,7 +167,7 @@ a {
 }
 
 .pricing {
-    min-height: 800px;
+
 }
 
 /*.pricing>.four-columns>.column {
@@ -157,19 +180,27 @@ a {
     /*width: 100px;;*/
 }
 
-.pricing>.four-columns>.column>img {
+/*.pricing>.four-columns>.column>img {
     /*position: absolute;*/
-    position: relative;
-    z-index: -10;
+    /*position: relative;
+    z-index: -10;*/
     /*padding-bottom: -600px;*/
     /*text-align: center;*/
-    left: -80px;
+    /*left: -80px;
     top: -50px;
     bottom: -500px;
-}
+}*/
 
 .four-columns {
     overflow: visible;
+}
+
+.pricetag {
+    padding-top: 0;
+    background-image: url("../img/price-tag.png");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    min-height: 800px;
 }
 
 /*.pricing>.four-columns>.column::before {
