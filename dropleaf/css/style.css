@@ -110,10 +110,13 @@ a {
     position: relative;
 }
 
+.game-screenshot {
+    width: 98%;
+}
+
 .leaf>img {
     padding-top: 50px;
     position: absolute;
-    width: 100%;
     left: 0px;
     top: 0px;
 }
@@ -125,7 +128,19 @@ a {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
-    border-right: 1px solid white;
+}
+
+.mask,.mask-flip {
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+
+.mask:hover {
+    transform: scale(1.1);
+}
+
+.mask-flip:hover {
+    transform: scaleX(-1.1) scaleY(1.1);
 }
 
 .how-it-works {
