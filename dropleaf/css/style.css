@@ -104,6 +104,30 @@ a {
 	border-radius: 5px;
 }
 
+.leaf {
+
+    height: 280px;
+    position: relative;
+}
+
+.leaf>img {
+    padding-top: 50px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.mask-flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    border-right: 1px solid white;
+}
+
 .how-it-works {
 	background-color: #9E8754;
 	color: white;
@@ -119,6 +143,12 @@ a {
 	-webkit-columns: 30px 4; /* Chrome, Safari, Opera */
     -moz-columns: 30px 4; /* Firefox */
     columns: 30px 4;
+}
+
+.five-columns {
+	-webkit-columns: 0px 5; /* Chrome, Safari, Opera */
+    -moz-columns: 0px 5; /* Firefox */
+    columns: 0px 5;
 }
 
 .column, .column>h2 {
