@@ -337,3 +337,12 @@ a {
 .fade>.frequency {
     padding-top: 155px !important;
 }
+
+.sign-up-form>* {
+    text-align: left;
+}
+
+.sign-up-form>form  { display: table;      }
+.sign-up-form>p     { display: table-row;  }
+.sign-up-form>label { display: table-cell; }
+.sign-up-form>input { display: table-cell; }
