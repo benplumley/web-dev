@@ -105,7 +105,7 @@ a {
 }
 
 .leaf {
-
+    overflow: hidden;
     height: 280px;
     position: relative;
 }
@@ -115,7 +115,7 @@ a {
 }
 
 .leaf>img {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     position: absolute;
     left: 0px;
     top: 0px;
@@ -131,6 +131,7 @@ a {
 }
 
 .mask,.mask-flip {
+    padding-top: 0px;
     transition: all .2s ease-in-out;
     width: 100%;
 }
@@ -251,6 +252,5 @@ a {
 .fade {
     background-size: 250px;
     background-position: center top;
-    size: 80%;
-    opacity: 50%;
+    padding-top: 0px;
 }
