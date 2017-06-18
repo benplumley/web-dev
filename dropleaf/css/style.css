@@ -180,15 +180,33 @@ a {
 	padding-top: 40px;
 }
 
-.community>div {
+
+
+.community-text>div>p {
+  text-align: left;
+}
+
+.community {
+	background-color: #9E8754;
+    background: url("../img/hero2.jpg");
+    background-size: cover;
+    color: white;
+    height: calc(100vh - 300px);
+    display: table;
+    width:100%;
+}
+
+.community-text {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.community-text>div {
   width: 500px;
   margin: 0 auto;
   padding-bottom: 40px;
 }
 
-.community>div>p {
-  text-align: left;
-}
 
 .welcome-home>h1 {
 	font-size: 40pt;
@@ -241,6 +259,10 @@ a {
     position: relative;
 }
 
+.pricetag.fade {
+    background-image: url("../img/price-tag3.png");
+}
+
 .pricetag>* {
     padding-top:140px;
 }
@@ -261,4 +283,8 @@ a {
     background-size: 250px;
     background-position: center top;
     padding-top: 0px;
+}
+
+.fade>* {
+    opacity: 0.5;
 }
