@@ -104,6 +104,10 @@ a {
 	border-radius: 5px;
 }
 
+.leaf-section {
+    padding-top: 50px;
+}
+
 .leaf {
     overflow: hidden;
     height: 280px;
@@ -115,7 +119,6 @@ a {
 }
 
 .leaf>img,.leaf>a>img {
-    /*padding-top: 50px;*/
     position: absolute;
     left: 0px;
     top: 0px;
@@ -168,7 +171,6 @@ a {
 }
 
 .column, .column>h2 {
-	/*overflow-y: hidden;*/
 	padding: 10px;
 }
 
@@ -179,8 +181,6 @@ a {
 .community>h1 {
 	padding-top: 40px;
 }
-
-
 
 .community-text>div>p {
   text-align: left;
@@ -257,6 +257,10 @@ a {
     background-position: center;
     min-height: 550px;
     position: relative;
+}
+
+.pricetag.pricetag2 {
+    background-image: url("../img/price-tag2.png");
 }
 
 .pricetag.fade {
