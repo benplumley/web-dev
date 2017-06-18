@@ -162,6 +162,14 @@ a {
 .how-it-works {
 	background-color: #9E8754;
 	color: white;
+    height: 500px;
+    display: table;
+    width: 100%;
+}
+
+.how-it-works-text {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .three-columns {
@@ -203,7 +211,7 @@ a {
     background: url("../img/hero2.jpg");
     background-size: cover;
     color: white;
-    height: 700px;
+    height: 750px;
     /*height: calc(100vh - 300px);*/
     display: table;
     width:100%;
@@ -220,6 +228,9 @@ a {
   padding-bottom: 40px;
 }
 
+.indent {
+    text-indent: 2em;
+}
 
 .welcome-home>h1 {
 	font-size: 40pt;
