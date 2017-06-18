@@ -52,7 +52,7 @@ a {
     background: url("../img/hero1.jpg");
     background-size: cover;
     color: white;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 160px);
     display: table;
     width:100%;
     /*line-height: 800px;*/
@@ -131,17 +131,17 @@ a {
 }
 
 .mask,.mask-flip {
-    padding-top: 0px;
     transition: all .2s ease-in-out;
     width: 100%;
+    top: -82px !important;
 }
 
 .mask:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .mask-flip:hover {
-    transform: scaleX(-1.1) scaleY(1.1);
+    transform: scaleX(-1.08) scaleY(1.08);
 }
 
 .how-it-works {
@@ -218,6 +218,14 @@ a {
 
 .pricing>h2 {
     z-index: -20;
+}
+
+.pricing>.floating {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 .four-columns {
