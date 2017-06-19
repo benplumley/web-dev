@@ -340,6 +340,10 @@ a {
 
 .sign-up-form>* {
     text-align: left;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	padding-top: 0px;
 }
 
 .sign-up-form>form  { display: table;      }
