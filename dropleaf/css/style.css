@@ -178,6 +178,12 @@ a {
     columns: 100px 3;
 }
 
+.three-columns.nogap {
+	-webkit-columns: 0px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 0px 3; /* Firefox */
+    columns: 0px 3;
+}
+
 .four-columns {
 	-webkit-columns: 30px 4; /* Chrome, Safari, Opera */
     -moz-columns: 30px 4; /* Firefox */
