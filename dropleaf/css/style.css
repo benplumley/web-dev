@@ -129,6 +129,9 @@ a {
 .game-screenshot {
     width: calc(100vw / 3);
 	margin:0;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
 }
 
 .leaf>img,.leaf>a>img {
@@ -137,28 +140,14 @@ a {
     top: 0px;
 }
 
-.mask-flip {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-}
-
-.mask,.mask-flip {
-    transition: all .2s ease-in-out;
-    width: 100%;
-    top: -82px !important;
-}
-
-.mask:hover {
+.game-screenshot:hover {
+    z-index: 1;
     transform: scale(1.08);
 }
 
-.mask-flip:hover {
+/*.mask-flip:hover {
     transform: scaleX(-1.08) scaleY(1.08);
-}
+}*/
 
 .how-it-works {
 	background-color: #9E8754;
@@ -185,8 +174,15 @@ a {
     columns: 0px 3;
 }
 
-.nogap>* {
+/*.nogap>* {
     padding: 0px;
+}*/
+
+table.no-spacing {
+  border-spacing: 0; /* Removes the cell spacing via CSS */
+  border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
+  overflow: hidden;
+  background-color: black;
 }
 
 .four-columns {
