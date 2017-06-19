@@ -94,10 +94,12 @@ a {
 
 .bush {
     background-color: #90C442; /*fallback for ancient browsers*/
-    background: url("../img/tree3_tile.png"), linear-gradient(rgba(0,0,0,0), white);
+    background: url("../img/tree3_tile.png"), rgba(0,0,0,0);
     background-size: auto 100%;
     position: relative;
     top: -8px;
+    bottom: -8px;
+    z-index: 10;
 }
 
 .join {
@@ -117,15 +119,10 @@ a {
 	border-radius: 5px;
 }
 
-/*.leaf-section {
-    padding-top: ;
-}*/
-
-/*.leaf {
-    overflow: hidden;
-    height: 280px;
+.game-grid {
     position: relative;
-}*/
+    top: -16px;
+}
 
 .game-screenshot {
     width: 100%;
