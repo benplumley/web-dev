@@ -39,6 +39,7 @@ a {
 .logo {
 	padding-top: 13px;
 	padding-left: 13px;
+    overflow-y: hidden;
 }
 
 .header>.logo {
@@ -46,7 +47,7 @@ a {
 }
 
 .menubar {
-	width: 100%;
+	width: 50vw;
 	text-align: right;
 	vertical-align: middle;
 	line-height: 57px;
@@ -116,38 +117,41 @@ a {
 	border-radius: 5px;
 }
 
-.leaf-section {
+/*.leaf-section {
     padding-top: ;
-}
+}*/
 
-.leaf {
+/*.leaf {
     overflow: hidden;
     height: 280px;
     position: relative;
-}
+}*/
 
 .game-screenshot {
-    width: calc(100vw / 3);
-	margin:0;
-    z-index: 2;
+    width: 100%;
+    /*z-index: 2;*/
     transition: all .2s ease-in-out;
     overflow: hidden;
 }
 
-.leaf>img,.leaf>a>img {
+.no-spacing a {
+    overflow: hidden;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+/*.leaf>img,.leaf>a>img {
     position: absolute;
     left: 0px;
     top: 0px;
-}
+}*/
 
 .game-screenshot:hover {
-    z-index: 1;
+    /*z-index: 1;*/
     transform: scale(1.08);
 }
-
-/*.mask-flip:hover {
-    transform: scaleX(-1.08) scaleY(1.08);
-}*/
 
 .how-it-works {
 	background-color: #9E8754;
@@ -174,15 +178,12 @@ a {
     columns: 0px 3;
 }
 
-/*.nogap>* {
-    padding: 0px;
-}*/
-
 table.no-spacing {
-  border-spacing: 0; /* Removes the cell spacing via CSS */
-  border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
-  overflow: hidden;
-  background-color: black;
+    table-layout:fixed;
+    width: 100%;
+    border-spacing: 0; /* Removes the cell spacing via CSS */
+    overflow: hidden;
+    background-color: black;
 }
 
 .four-columns {
@@ -196,6 +197,7 @@ table.no-spacing {
     -moz-columns: 0px 5; /* Firefox */
     columns: 0px 5;
 }
+
 .button-slider {
 	background-color: #84d17d;
 	background-size: 40px;
