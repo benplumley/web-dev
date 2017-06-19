@@ -182,6 +182,7 @@ a {
 	-webkit-columns: 0px 3; /* Chrome, Safari, Opera */
     -moz-columns: 0px 3; /* Firefox */
     columns: 0px 3;
+    padding: 0px;
 }
 
 .nogap>* {
