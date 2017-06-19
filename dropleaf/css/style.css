@@ -183,7 +183,6 @@ a {
 	-webkit-columns: 0px 3; /* Chrome, Safari, Opera */
     -moz-columns: 0px 3; /* Firefox */
     columns: 0px 3;
-    padding: 0px;
 }
 
 .nogap>* {
@@ -202,7 +201,7 @@ a {
     columns: 0px 5;
 }
 .button-slider {
-	background-color: #937231;
+	background-color: #84d17d;
 	background-size: 40px;
 	border: none;
 	border-radius: 5px;
@@ -211,7 +210,7 @@ a {
 	text-align: center;
 }
 .button-slider:hover {
-	background-color: #7c5e22;
+	background-color: #6fb569;
 }
 
 .column, .column>h2 {
