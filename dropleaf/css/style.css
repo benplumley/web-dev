@@ -122,6 +122,7 @@ a {
 .game-grid {
     position: relative;
     top: -16px;
+    background-color: #9E8754;
 }
 
 .game-screenshot {
@@ -151,6 +152,7 @@ a {
 }
 
 .how-it-works {
+    border-top: solid 16px #9E8754;
 	background-color: #9E8754;
 	color: white;
     height: 500px;
@@ -196,6 +198,9 @@ table.no-spacing {
 }
 
 .button-slider {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 20px);
 	background-color: #84d17d;
 	background-size: 40px;
 	border: none;
@@ -204,6 +209,15 @@ table.no-spacing {
 	padding: 10px 20px 10px 20px;
 	text-align: center;
 }
+
+.button-slider-left {
+    left: 0px;
+}
+
+.button-slider-right {
+    right: 0px;
+}
+
 .button-slider:hover {
 	background-color: #6fb569;
 }
