@@ -237,20 +237,29 @@ table.no-spacing {
   text-align: left;
 }
 
-.community {
+/*.community {
 	background-color: #9E8754;
     background: url("../img/hero2.jpg");
     background-size: cover;
     color: white;
     height: 750px;
-    /*height: calc(100vh - 300px);*/
+    height: calc(100vh - 300px);
     display: table;
     width:100%;
+}*/ 
+.community {
+	display: table;
+	background-color: #a4cc56;
+	width: 1920px;
+	height: 400px;
+	color: black;
+	text-align: center;
 }
 
 .community-text {
     display: table-cell;
-    vertical-align: bottom;
+	vertical-align: middle;
+	text-align: center;
 }
 
 .community-text>div {
